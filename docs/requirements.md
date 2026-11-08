@@ -14,11 +14,11 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 |---|---|---|
 | RF01 | Identificar solicitações dos clientes por palavras-chave. | Implementado |
 | RF02 | Priorizar solicitações de atendimento humano. | Implementado |
-| RF03 | Consultar pedidos fictícios pelo número. | Planejado |
-| RF04 | Informar o status e as informações disponíveis dos pedidos. | Planejado |
+| RF03 | Consultar pedidos fictícios pelo número. | Implementado |
+| RF04 | Informar o status e as informações disponíveis dos pedidos. | Implementado |
 | RF05 | Registrar solicitações de cancelamento após confirmação do cliente. | Planejado |
 | RF06 | Registrar histórico de atendimento. | Planejado |
-| RF07 | Informar quando um pedido não for encontrado. | Planejado |
+| RF07 | Informar quando um pedido não for encontrado. | Implementado |
 | RF08 | Encaminhar solicitações de cancelamento para atendimento humano. | Planejado |
 
 ## 3. Requisitos não funcionais
@@ -57,3 +57,5 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 | 06/11/2026 | Conclusão da Fase 1: identificação de solicitações e priorização do atendimento humano. |
 | 06/11/2026 | Criação da documentação inicial de requisitos. |
 | 06/11/2026 | Inclusão dos requisitos de consulta de pedidos e cancelamentos. |
+| 08/11/2026 | Conclusão da Fase 2: implementação da consulta de pedidos em Python, com validação de entradas e tratamento de erros. |
+| 08/11/2026 | Organização do código em funções e publicação da implementação no GitHub. |
