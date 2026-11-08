@@ -15,9 +15,11 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 | RF01 | Identificar solicitações dos clientes por palavras-chave. | Implementado |
 | RF02 | Priorizar solicitações de atendimento humano. | Implementado |
 | RF03 | Consultar pedidos fictícios pelo número. | Planejado |
-| RF04 | Informar o status de pedidos encontrados. | Planejado |
-| RF05 | Registrar solicitações de cancelamento. | Planejado |
+| RF04 | Informar o status e as informações disponíveis dos pedidos. | Planejado |
+| RF05 | Registrar solicitações de cancelamento após confirmação do cliente. | Planejado |
 | RF06 | Registrar histórico de atendimento. | Planejado |
+| RF07 | Informar quando um pedido não for encontrado. | Planejado |
+| RF08 | Encaminhar solicitações de cancelamento para atendimento humano. | Planejado |
 
 ## 3. Requisitos não funcionais
 
@@ -31,9 +33,11 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 ## 4. Regras de negócio
 
 - RN01: solicitações explícitas de atendimento humano terão prioridade.
-- RN02: reembolsos deverão ser encaminhados para atendimento humano.
-- RN03: o sistema não poderá confirmar operações sem uma confirmação real.
+- RN02: solicitações de reembolso deverão ser encaminhadas para atendimento humano.
+- RN03: o sistema não poderá confirmar operações sem confirmação real.
 - RN04: consultas de pedidos deverão utilizar apenas dados disponíveis na base fictícia.
+- RN05: o agente deverá solicitar confirmação explícita antes de registrar uma solicitação de cancelamento.
+- RN06: registrar uma solicitação de cancelamento não significa que o pedido foi efetivamente cancelado.
 
 ## 5. Tecnologias
 
@@ -52,3 +56,4 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 |---|---|
 | 06/11/2026 | Conclusão da Fase 1: identificação de solicitações e priorização do atendimento humano. |
 | 06/11/2026 | Criação da documentação inicial de requisitos. |
+| 06/11/2026 | Inclusão dos requisitos de consulta de pedidos e cancelamentos. |
