@@ -43,14 +43,26 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 
 **Atualmente utilizadas:**
 - Python 3.12
+- SQLite
 - Git e GitHub
 
 **Planejadas:**
-- SQLite
-- Integração com modelo de linguagem
+- Integração com modelo de linguagem (LLM)
+- Ferramentas para o agente de IA
 - Interface de atendimento
 
-## 6. Histórico de evolução
+## 6. Organização do projeto
+
+O projeto utiliza uma estrutura modular para separar as responsabilidades:
+
+| Módulo | Responsabilidade |
+|---|---|
+| `main.py` | Ponto de entrada da aplicação e identificação das solicitações. |
+| `orders.py` | Consulta e processamento de informações dos pedidos. |
+| `database.py` | Gerenciamento da conexão com o banco de dados SQLite. |
+| `toptech.db` | Armazenamento dos dados fictícios dos pedidos. |
+
+## 7. Histórico de evolução
 
 | Data | Alteração |
 |---|---|
@@ -59,3 +71,4 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 | 06/11/2026 | Inclusão dos requisitos de consulta de pedidos e cancelamentos. |
 | 08/11/2026 | Conclusão da Fase 2: implementação da consulta de pedidos em Python, com validação de entradas e tratamento de erros. |
 | 08/11/2026 | Organização do código em funções e publicação da implementação no GitHub. |
+| 10/11/2026 | Evolução da Fase 3: integração com SQLite, criação do módulo `database.py`, centralização da conexão e configuração de caminho absoluto para o banco de dados. |
