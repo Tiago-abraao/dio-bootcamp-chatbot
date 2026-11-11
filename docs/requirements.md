@@ -42,11 +42,15 @@ Os requisitos funcionais descrevem as funcionalidades que o sistema deverá ofer
 ## 5. Tecnologias
 
 **Atualmente utilizadas:**
+
 - Python 3.12
 - SQLite
+- unittest (testes automatizados)
+- unittest.mock (simulação de dependências nos testes)
 - Git e GitHub
 
 **Planejadas:**
+
 - Integração com modelo de linguagem (LLM)
 - Ferramentas para o agente de IA
 - Interface de atendimento
@@ -60,7 +64,8 @@ O projeto utiliza uma estrutura modular para separar as responsabilidades:
 | `main.py` | Ponto de entrada da aplicação e identificação das solicitações. |
 | `orders.py` | Consulta e processamento de informações dos pedidos. |
 | `database.py` | Gerenciamento da conexão com o banco de dados SQLite. |
-| `toptech.db` | Armazenamento dos dados fictícios dos pedidos. |
+| `tests/test_orders.py` | Testes automatizados das consultas de pedidos. |
+| `toptech.db` | Armazenamento local dos dados fictícios dos pedidos. |
 
 ## 7. Histórico de evolução
 
@@ -71,4 +76,16 @@ O projeto utiliza uma estrutura modular para separar as responsabilidades:
 | 06/11/2026 | Inclusão dos requisitos de consulta de pedidos e cancelamentos. |
 | 08/11/2026 | Conclusão da Fase 2: implementação da consulta de pedidos em Python, com validação de entradas e tratamento de erros. |
 | 08/11/2026 | Organização do código em funções e publicação da implementação no GitHub. |
-| 10/11/2026 | Evolução da Fase 3: integração com SQLite, criação do módulo `database.py`, centralização da conexão e configuração de caminho absoluto para o banco de dados. |
+| 10/11/2026 | Integração com SQLite, criação do módulo `database.py`, centralização da conexão e configuração do caminho do banco de dados. |
+| 11/11/2026 | Conclusão da integração SQLite e modularização da consulta de pedidos. |
+| 11/11/2026 | Implementação dos primeiros testes automatizados utilizando `unittest` e `unittest.mock`, com três testes aprovados. |
+
+## 8. Próximas evoluções
+
+- Integrar um modelo de linguagem (LLM) para interpretar mensagens em linguagem natural.
+- Desenvolver ferramentas para permitir que o agente consulte pedidos e execute operações autorizadas.
+- Implementar o fluxo de cancelamento com confirmação do cliente.
+- Desenvolver o encaminhamento para atendimento humano.
+- Implementar o registro do histórico de atendimento.
+- Criar uma interface para demonstração do agente.
+- Preparar instruções de instalação e inicialização do banco de dados para novos usuários.
