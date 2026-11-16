@@ -23,6 +23,21 @@ def buscar_pedido(numero_pedido):
     return pedido
 
 
+def buscar_pedido_completo(numero_pedido):
+    pedido = buscar_pedido(numero_pedido)
+
+    if pedido is None:
+        return None
+
+    resultado = {
+        "numero": pedido[0],
+        "produto": pedido[1],
+        "status": pedido[2]
+    }
+
+    return resultado
+
+
 def consultar_pedido(numero_pedido):
     pedido = buscar_pedido(numero_pedido)
 

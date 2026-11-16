@@ -1,4 +1,10 @@
+
+from llm_client import consultar_ia
+
+
 def identificar_solicitacao(mensagem):
+    mensagem = mensagem.lower()
+
     if "atendente" in mensagem:
         return "Você deseja atendimento humano."
     elif "atrasado" in mensagem:
@@ -13,7 +19,16 @@ def identificar_solicitacao(mensagem):
         return "Não conseguimos identificar sua solicitação."
 
 
-mensagem = input("Como podemos ajudar? ")
-mensagem = mensagem.lower()
-resposta = identificar_solicitacao(mensagem)
-print(resposta)
+if __name__ == "__main__":
+    print("TopTech AI — Atendimento iniciado!")
+    print("Digite 'sair' para encerrar.\n")
+
+    while True:
+        mensagem = input("Você: ")
+
+        if mensagem.lower() == "sair":
+            print("Atendimento encerrado!")
+            break
+
+        resposta = consultar_ia(mensagem)
+        print(f"\nTopTech AI: {resposta}\n")
